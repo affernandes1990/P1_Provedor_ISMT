@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+ <!-- =========================
+     Website Provedor de Multimédia
+     Realizado por André Fernandes Nº 10059
+     Licenciatura do 3ºAno de Multimédia
+     Unidade Curricular: Programação 1
+     Docente: Frederico Fonseca
+============================== -->
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Provedor de Multimédia</title>
+    
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,600,700,800,900,400,300' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic' rel='stylesheet' type='text/css'>
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!-- =========================
+   Header - Página Inicial Website
+============================== -->
+    <header class="header parallax home-parallax page" id="home">
+        <div class="section_overlay">
+            
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <label for="abrir_menu" class="abrir_menu">Menu</label>
+            <input type="checkbox" id="abrir_menu" role="button"> 
+            <!-- MENU -->
+            <ul id="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">O Provedor</a></li>
+                <li><a href="#entrevista">Entrevista</a></li>
+                <li><a href="#galeria">Fotografias</a></li>
+                <li><a href="#actuacao">Actuação</a></li>
+                <li><a href="#escprovedor">Escreva ao Provedor</a></li>
+                <li><a href="#news">Feed Notícias</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="container home-container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+                            <h1>GONÇALO CALÇADA</h1>
+                            <h3>Candidato, a Provedor.</h3>
+                            <p>"Agradeço aos estudantes da Licenciatura de Multimédia do Instituto Superior Miguel Torga a confiança que depositaram em mim para me candidatar para Provedor do Estudante. No próximo dia 18 de Julho de 2017, o Senhor Presidente poderá conferir-me a posse do cargo no qual me proponho retribuir a vossa confiança. Procurarei desempenhar uma provedoria pró-ativa que eventualmente requererá o estudo dos problemas gerais que afetam os estudantes e a avaliação da possibilidade de contribuir para a sua resolução. Para que isso seja possível conto convosco, para vencer estas eleições. Obrigado!" <p> <strong>Gonçalo Calçada</strong></p>
+
+                            <div class="sobre-btn">
+                            <!-- BUTTON -->
+                                <a href="#servicos" class="baixo">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fim Header -->
+    
+    
+       <!-- =========================
+    SERVIÇOS
+============================== -->
+<section id="servicos" class="provedor parallax">
+        <div class="section_overlay">
+            <div class="container">
+                            <div class="col-md-12 text-center">
+                                <!-- MISSÃO -->
+                                <div class="col-md-4 text-center">
+                                                    <div class="provedor_caption">
+                                                    <div class="servicos_icone"> <span><i class="fa fa-users"></i></span> </div>
+                                                <!-- DESCRIÇÃO -->  
+                                                    <h2>Missão</h2>
+                                                    <p>O Provedor do Estudante, da Licenciatura de Multimédia é um órgão independente...</p>
+                                                    </div>
+                                                
+                                                <!-- BOTÃO BOTÃO MISSÃO  -->  
+                                                    <a class="btn" data-popup_missao-open="popup_missao-1" id="missao_text">Ver Mais</a>
+                                
+                                      <!-- FIM BOTÃO MISSÃO  -->
+                                </div>
+                                <!-- BIOGRAFIA -->
+                                <div class="col-md-4 text-center">
+                                                <div class="provedor_caption">
+                                                    <div class="servicos_icone icon2"> <span><i class="fa fa-graduation-cap"></i></span> </div>
+                                                <!-- DESCRIÇÃO --> 
+                                                    <h2>Biografia</h2>
+                                                    <p>Tenho formação em Tecnologias e Programação de Sistemas de Informação (CET)...</p>
+                                                </div>
+                                                <!-- BOTÃO BIOGRAFIA  -->  
+                                                    <a class="btn" data-popup_biografia-open="popup_biografia-1" id="biografia_text">Ver Mais</a>
+                                </div>
+                                <!-- INTERVENÇÕES -->
+                                <div class="col-md-4 text-center">
+                                                <div class="provedor_caption">
+                                                    <div class="servicos_icone icon2"> <span><i class="fa fa-shield"></i></span> </div>
+                                                <!-- DESCRIÇÃO --> 
+                                                    <h2>INTERVENÇÕES</h2>
+                                                    <p>Praxe é o que habitualmente se faz, é costume ou rotina. As praxes académicas de hoje não se sabe...</p>
+                                                </div>
+                                                <!-- BOTÃO INTERVENÇÕES  -->  
+                                                    <a class="btn" data-popup_intervencoes-open="popup_intervencoes-1" id="intervencoes_text">Ver Mais</a>
+                                </div>
+     
+                                                <!-- ============================================================
+                                                JQUERY - JANELA BIOGRAFIA
+                                                O Código do Pop-Up jQuery, foi inspirado do trabalho CiberKids.   
+                                                Webgrafia: http://inspirationalpixels.com */ 
+                                                ============================================================= -->
+                                                <div class="col-md-12">
+                                                    <div class="popup_biografia" data-popup_biografia="popup_biografia-1">
+                                                        <div class="popup_biografia-inner">
+                                                    <h2>Biografia</h2>
+                                                    <p><strong>2017, </strong>Candidatura a Provedor do Estudante da Licenciatura de Multimédia do Instituto Superior Miguel Torga. </p>
+                                                    <p><strong>2014-2017, </strong>Licenciatura de Multimédia, Instituto Superior Miguel Torga. </p>
+                                                    <p><strong>2014, </strong>Estágio na AIRC - Associação de Informática da Região Centro </p>
+                                                    <p><strong>2013-2014, </strong>CET - Tecnologias e Programação de Sistemas de Informação, Instituto Superior Miguel Torga.</p>
+                                                    <p><strong>2009-2013, </strong>Ciências e Tecnologias, Escola Secundária Avelar Brotero</p>
+                                                            
+                                                            <p><a data-popup_biografia-close="popup_biografia-1" href="#">Fechar</a></p>
+                                                            <a class="popup_biografia-close" data-popup_biografia-close="popup_biografia-1" href="#">x</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            
+                                                                   <!--
+                                                =================================================
+                                                JQUERY - JANELA MISSÃO
+                                                O Código do Pop-Up jQuery, foi inspirado do trabalho CiberKids.   
+                                                Webgrafia: http://inspirationalpixels.com */ 
+                                                ============================================================= -->
+                                                <div class="col-md-12">
+                                                    <div class="popup_missao" data-popup_missao="popup_missao-1">
+                                                        <div class="popup_missao-inner">
+                                                        <h2>Missão</h2>
+                                                        <p>O Provedor do Estudante, da Licenciatura de Multimédia é um órgão independente do Instituto Superior Miguel Torga que tem como objetivo a defesa e a promoção dos direitos e interesses dos estudantes</p>
+                                                            <p><a data-popup_missao-close="popup_missao-1" href="#">Fechar</a></p>
+                                                            <a class="popup_missao-close" data-popup_missao-close="popup_missao-1" href="#">x</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                                    <!-- FIM POP UP MISSÃO -->
+                                
+                                            <!--
+                                                =================================================
+                                                JQUERY - INFO INTERVENÇÕES
+                                                O Código do Pop-Up jQuery, foi inspirado do trabalho CiberKids.   
+                                                Webgrafia: http://inspirationalpixels.com */ 
+                                                ============================================================= -->
+                                                <div class="col-md-12">
+                                                    <div class="popup_intervencoes" data-popup_intervencoes="popup_intervencoes-1">
+                                                        <div class="popup_intervencoes-inner">
+                                                            <h2>INTERVENÇÕES</h2>
+                                                            <p>Praxe é o que habitualmente se faz, é costume ou rotina. As praxes académicas de hoje não se sabe de que rotina veem. O costume era coimbrão. Era uma “iniciação” dos caloiros universitários, ao tempo provincianos, pressupostamente, pouco preparados para a vida citadina e académica em que de súbito se viam. Sempre oscilaram entre dois H: humor e humilhação. Sempre foram contestação do “status quo” político, social e cultural. <br>
+                                                            Nos novos tempos que vivemos, as praxes alargaram-se a outros estabelecimentos de ensino, serviço militar e até chão de fábrica. Perdido o humor quase só ficou a humilhação, por vezes, configurando “bullying”. <br>
+                                                            A questão, virada para o futuro, diz mais respeito aos estudantes e suas organizações que aos poderes constituídos, que só podem atuar se se provar ilícito disciplinar ou criminal. Melhor é que se exerça uma magistratura de influência que promova novas praxes mais conformes com o civismo e a vida democrática. 
+                                                            </p>
+                                                            <p><strong>Gonçalo Calçada</strong> 
+                                                            <p>[Noticia (completa) publicada em 19 de julho de 2017 no Jornal Diário de Coimbra].</p>
+                                                            <p><a data-popup_intervencoes-close="popup_intervencoes-1" href="#">Fechar</a></p>
+                                                            <a class="popup_intervencoes-close" data-popup_intervencoes-close="popup_intervencoes-1" href="#">x</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                            </div>
+            </div>
+        </div>
+</section>
+    
+    
+<!--  FIM SERVIÇOS -->
+    
+<!--  INFO PROVEDOR -->
+    
+    <section id="sobre" class="calcada">    
+            <div class="container home-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+                            <h1>GONÇALO CALÇADA</h1>
+                            <h3>Candidato, a Provedor.</h3>
+                             <p>“O meu nome é Gonçalo Calçada, sou natural de Coimbra e estou a tirar a Licenciatura de Multimédia no Instituto Superior Miguel Torga. Tenho formação em Tecnologias e Programação de Sistemas de Informação (CET) e estou a concluir uma Licenciatura de Multimédia (ISMT). Concluí o secundário em 2013 nas áreas Ciências e Tecnologias, na Escola Secundária Avelar Brotero.Em 2014 fiz um estágio como programador na AIRC - Associação de Informática da Região Centro, fiz diversos trabalhos e tive a oportunidade de ganhar bastante experiência profissional. Estou a terminar a Licenciatura de Multimédia no mesmo Instituto onde tirei o CET (ISMT). Estou também atualmente a desenvolver pequenos trabalhos como freelancer e a trabalhar num trabalho académico, um jogo, em colaboração com mais dois colegas da área. Outra parte do meu tempo, é dedicado há defesa e a promoção dos direitos e interesses dos estudantes, no qual me estou a candidatar a Provedor de Estudante. Através deste site, espero estar a dar-me a conhecer melhor e espero ter sucesso na minha candidatura a provedor do Estudante.” </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="home_text">
+                                <!-- Provedor -->
+                                <h1>Dados Pessoas</h1>
+                                <p><strong>Nome:</strong> Gonçalo Calçada
+                                <br><strong>Idade:</strong> 26 Anos
+                                <br><strong>Curso:</strong> Licenciatura de Multimédia
+                                <br><strong>Telf.:</strong> (+ 351) 999 999 990
+                                <br><strong>E-mail:</strong> provedor.estudante@ismt.pt 
+                                <!-- MORADA -->
+                                <h1>Morada</h1>
+                                <p>Urbanização Quinta das Lagrimas Fase 1
+                                <br>3040-382 Coimbra
+                                <br>Santa Clara, Coimbra
+                                <br>GPS: 40.200557,-8.435428
+                            </div>
+                            <div>
+                            </div>
+                            <!-- FIM CONTACTOS -->
+                    </div> 
+                    </div>
+                </div>
+</section>
+
+<!--  FIM INFO PROVEDOR -->
+
+<!-- ENTREVISTA -->
+    <section id="entrevista" class="entrevista parallax">
+        <div class="section_overlay">
+            <div class="container">
+                            <div class="col-md-12">
+                                                <!-- IMAGEM -->
+                                                <div class="entrevista_caption">
+                                                <!-- DESCRIÇÃO -->  
+                                                    <h2>ENTREVISTA</h2>
+                                                        <p><strong>Entrevistador:</strong> André Fernandes</p>
+                                                        <p><strong>Entrevistado:</strong> Gonçalo Calçada</p>
+                                                        <p><strong> AF -  Está-se a candidatar a Provedor do Estudante, da Licenciatura de Multimédia, numa Instituição com mais de 70 anos de existência. Que expectativas tem?</strong> <br> GC - O futuro do Provedor dependerá muito da forma como os estudantes vão reagir a esta oportunidade, mas é também fundamental o modo como os funcionários e docentes vão encarar a sua ação. Dito de outro modo, o Provedor deve ter capacidade de diálogo e poder de persuasão, mas também é imprescindível a compreensão de todas as partes envolvidas, face à questão que esteja a ser analisada.</p>
+                                                </div>
+                
+                                                <!-- BOTÃO ENTREVISTA QUE ABRE O POP-UP -->  
+                                                    <a class="btn" data-popup_entrevista-open="popup_entrevista-1" id="entrevista_text">Ver Entrevista</a>
+                                
+                                                <!-- ============================================================
+                                                JQUERY - JANELA ENTREVISTA 
+                                                O Código do Pop-Up jQuery, foi inspirado do trabalho CiberKids.   
+                                                Webgrafia: http://inspirationalpixels.com */ 
+                                                ============================================================= -->
+                                                <div class="col-md-12">
+                                                    <div class="popup_entrevista" data-popup_entrevista="popup_entrevista-1">
+                                                        <div class="popup_entrevista-inner">
+                                                            <h2>ENTREVISTA</h2>
+                                                            <p><strong>Entrevistador:</strong> André Fernandes</p>
+                                                            <p><strong>Entrevistado:</strong> Gonçalo Calçada</p>
+                                                            <p><strong> AF - Que dificuldades antevê para o desempenho destas funções? </strong> <br> GC - O problema da compreensão do cargo em si. Vou falar pessoalmente com a Coordenação Cientifica, com Coordenação Executiva e irei fazer sessões públicas de esclarecimento nas reuniões do curso que assim o entendam.</p>
+                                                             <p><strong>AF - Vê-se como um fiscalizador? </strong> <br>
+                                                            GC - Não, o Provedor jamais será um fiscal. Não tenho poderes de fiscalização, para isso já existem outras instâncias. Este é um órgão novo que tem de ser compreendido fora dos 3 “A arma do Provedor é, essencialmente, a persuasão.” esquemas habituais. Se os funcionários ou os docentes pensarem nesta função desse modo, é péssimo.</p>
+                                                            <p><strong>AF - Que tipo de mensagens ou queixas espera receber com maior frequência? </strong><br>
+                                                            GC - A realidade é muito mais rica do que a imaginação. Há alguns tipos de queixas que eu antecipo que possam surgir (relacionadas com serviços administrativos, académicos, questões pedagógicas…) mas, com certeza, surgirão outras completamente diferentes daquilo que eu estou à espera. Por exemplo, na semana passada, um aluno veio falar comigo e disse-me: “Sei que vai ser Provedor do Estudante, eu quero mudar de curso e estou com um problema de equivalências, como é que posso resolvê-lo?” Evidentemente, que se trata de uma questão para ser analisada ao nível da coordenação do curso. Agora imaginemos que as suas razões não são aceites pela coordenação de curso, pode recorrer ao Conselho Pedagógico e se ainda assim não conseguir fazer valer a sua perspetiva, pode recorrer ao Provedor, alertando para uma eventual incorreção na forma como a questão é encarada. E daí pode, ou não, resultar uma recomendação de melhoria daquele procedimento.</p>
+                                                            <p><strong>AF - Como é que um aluno que necessite da sua atenção para a resolução de um problema pode contactá-lo? </strong><br>
+                                                                GC – Pode fazê-lo pessoalmente, por carta, e-mail ou telefone, conforme é indicado na nossa página, onde os contactos estão disponíveis.</p>
+
+
+                                                            <!-- BOTÃO QUE FECHA O POP-UP -->    
+                                                            <p><a data-popup_entrevista-close="popup_entrevista-1" href="#">Fechar</a></p>
+                                                            <a class="popup_entrevista-close" data-popup_entrevista-close="popup_entrevista-1" href="#">x</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                
+                                            
+                                                 <!-- FIM JANELA ENTREVISTA -->
+                            </div>
+            </div>
+        </div>
+</section>
+    
+    <!-- FIM ENTREVISTA -->
+
+    <!-- GALERIA -->
+ <section id="galeria" class="about page">
+             <div class="area_galeria">
+            <div class="container">
+        <div class= "row">
+            <a class="anchor"></a>
+            <div class="col_5 cos_8" id="grandes">
+                <img id="1" src="images/galeria/1.jpg" alt="Calçada">
+                <img id="2" src="images/galeria/2.jpg" alt="Calçada">
+                <img id="3" src="images/galeria/3.jpg" alt="Calçada">
+                <img id="4" src="images/galeria/4.jpg" alt="Calçada">
+                <img id="5" src="images/galeria/5.jpg" alt="Calçada">
+                <img id="6" src="images/galeria/6.jpg" alt="Calçada">
+
+            </div>
+        </div>
+
+        <div class= "row" id="imagenspequenas">
+            <div class="col_5 cos_8 pequenas">
+                <img src="images/galeria/11.jpg" alt="Calçada">
+                <img src="images/galeria/12.jpg" alt="Calçada">
+                <img src="images/galeria/13.jpg" alt="Calçada">
+                <img src="images/galeria/14.jpg" alt="Calçada">
+                <img src="images/galeria/15.jpg" alt="Calçada">
+                <img src="images/galeria/16.jpg" alt="Calçada">
+            </div>
+        </div>
+
+        <!-- ABRE A QUALQUER IMAGEM SELECCIONADA NA GALERIA, NA JANELA MODAL-->   
+        <div id="fotografia" class="modal">
+            <!-- BOTÃO QUE FECHA O POP-UP -->
+            <span class="fechar" onclick="document.getElementById('fotografia').style.display='none'">&times;</span>
+        <!-- Os Validadores do W3C, dão erro nesta linha abaixo por falta do alt e src, usei src="#" alt="#" somente para não dar erro -->  
+            <img class="modal-content" id="img01" src="#" alt="#">
+        </div>
+        
+                </div>
+            </div>
+</section>
+    
+        <!-- =========================
+        ACTUAÇÃO
+============================== -->
+ <section  id="actuacao" class="campanha parallax">
+        <div class="section_overlay">
+            <div class="container">
+                <h4>Actuação</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+                            <p><strong>O Provedor do Estudante atua mediante a receção de mensagens - consultas, elogios, participações, queixas, petições, sugestões - enviadas pelos estudantes da Licenciatura de Multimédia (ISMT).</strong></p>
+                            <p><strong>Quando recebe mensagens dos estudantes sobre o funcionamento do Instituto, o Provedor realiza a investigação que se torne necessária para o apuramento dos factos, de forma coordenada e em colaboração com os órgãos e serviços do Instituto e das Unidades Orgânicas. Finalmente, atua de acordo com o tipo de mensagem recebida:</strong> </p>
+                            <p>· Procurando soluções conciliatórias quando tal se justifique. <br>
+                            · Emitindo recomendações que reforcem a qualidade dos serviços prestados.</p>
+                            <p><strong>Por iniciativa própria o Provedor do Estudante pode propor modificações às normas da Regulamentação Universitária que sejam contraditórias ou pouco claras ou pode sugerir a elaboração de novos regulamentos com vista a melhorar o grau de satisfação dos direitos e interesses legítimos dos estudantes do Instituto.</strong> </p>
+                            <p><strong>Pode igualmente atuar se tomar conhecimento, através de qualquer meio minimamente credível, de ações ou omissões de órgãos, de funcionários ou de professores que, em sua opinião:</strong></p>
+                            <p>· Possam atentar contra os legítimos direitos dos estudantes reconhecidos pela lei ou pela regulamentação do Instituto. <br>
+                            · Sejam pouco razoáveis, injustas, inadequadas ou incorretas.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- =========================
+    FIM ACTUAÇÃO
+============================== -->
+
+    <!-- =========================
+    ESCREVA AO PROVEDOR
+============================== -->
+ <section id="escprovedor" class="campanha parallax">
+        <div class="section_overlay">
+            <div class="container">
+                <h4>Escreva ao Provedor</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="home_text">
+                            <!-- TITLE AND DESC -->
+                            <p>Em caso de vitória:<p> 
+                            <strong>As comunicações (consultas, elogios, participações, queixas, petições ou sugestões) são muito importantes para o desempenho das funções do Provedor do Estudante. Para simplificar a sua apresentação, é possível usar diversas alternativas:</strong><p>
+                            · Presencial: Nas instalações da Provedoria. Mediante marcação é possível fazer a entrega após ou durante uma entrevista com o Provedor.<br> 
+                            · Envio por e-mail ou por correio postal.<p>
+                            A exposição escrita deve sempre incluir a identificação completa do estudante ou de um dos estudantes envolvidos nos assuntos descritos. Entende-se por identificação completa o nome, o número de aluno, a morada postal, o endereço de email, o telefone e/ou o telemóvel.<p> 
+
+                            A descrição dos factos deve ser feita de forma objetiva, identificando de forma clara o alvo da comunicação, fornecendo as informações necessárias e pertinentes para o apuramento dos factos e identificando eventuais testemunhas dos factos se existirem e se tal for necessário.<p>
+                            <strong>Aviso importante:</strong><p>
+                            A apresentação de uma queixa não suspende os prazos previstos na lei ou nos regulamentos para recorrer tanto por via administrativa como jurisdicional. Também não suspende a execução da resolução do ato que motivou a queixa.<p>
+                            <strong>Observação:</strong><p>
+                            Os dados recolhidos são processados em conformidade com o disposto na Lei n.º 67/98, de 26 de Outubro - Lei da proteção de dados pessoais. Comissão Nacional de Proteção dos Dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- =========================
+    FIM ESCREVA AO PROVEDOR
+============================== -->
+    
+<!-- FEED NOTÍCIAS -->
+    
+<section id="news" class="twitter-feed">
+  <div class="container">
+    <div class="twitter_bird"><span><i class="fa fa-twitter"></i></span></div>
+    <p> A Provedoria é importante na defesa dos interesses dos estudantes pois desenvolve as suas funções de forma liberta, independente e isenta de qualquer órgão. #GonçaloaProvedor</p>
+    <span>Há 28 mins atrás</span> </div>
+</section>  
+<section class="facebook-feed">
+  <div class="container">
+    <div class="facebook_logo"><span><i class="fa fa-facebook"></i></span></div>
+    <p>Gonçalo Calçada recebe apoio dos Coordenadores do curso de Multimédia,<br> para a sua canditura #GonçaloaProvedor</p>
+    <span>Há 53 mins atrás</span> </div>
+</section>
+<section class="news-feed">
+  <div class="container">
+    <div class="news_logo"><span><i class="fa fa-instagram"></i></span></div>
+    <p>"Procurarei desempenhar uma provedoria pró-ativa que eventualmente requererá o estudo dos problemas gerais que afetam os estudantes e a avaliação da possibilidade de contribuir para a sua resolução." #GonçaloaProvedor #Eleições2017 #ISMT</p>
+    <span>Há 2 horas atrás</span> </div>
+</section>
+    
+<!-- FIM FEED NOTÍCIAS -->
+    
+<!-- CONTACTOS -->
+ <section class="about page" id="contactos">
+             <div class="area_contactos">
+            <div class="container">
+                <h4>Contactos</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                              <div class="form">
+                                    <div id="errormessage"></div>
+                                    <form method="post" role="form" class="contactForm">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Email" required/>
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Assunto" required/>
+                                            <div class="validation"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
+                                            <div class="validation"></div>
+                                        </div>
+
+                                      <button type="submit" class="btn botao_enviar">Enviar Mensagem</button>
+                                
+                                    </form>
+                              </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div>
+                                <!-- Provedor -->
+                                <h3>Provedor do Estudante</h3>
+                                <p><strong>Gonçalo Calçada,</strong> Licenciatura de Multimédia
+                                <br><strong>Telf.:</strong> (+ 351) 999 999 990
+                                <br><strong>E-mail:</strong> provedor.estudante@ismt.pt 
+                                <!-- MORADA -->
+                                <h3>Endereço</h3>
+                                <p><strong>Instituto Superior Miguel Torga</strong>
+                                <br><strong> Largo Cruz de Celas 1</strong>
+                                <br><strong> 3000-132 Coimbra</strong>
+                            </div>
+                            <div>
+                                <p>O atendimento presencial pelo Provedor do Estudante será efetuado mediante marcação prévia, através do envio de e-mail a solicitar a marcação de uma reunião.
+                            </div>
+                            <!-- FIM CONTACTOS -->
+                    </div>  
+            <div class="col-md-6">
+            <ul class="redes_sociais">
+            <li class="behance"><a href="https://www.behance.net/goncalocalcada7" target="_blank"><i class="fa fa-behance"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/goncalo.calcada.9" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<!-- FIM CONTACTOS -->
+       
+<!-- =========================
+     FOOTER 
+============================== -->
+
+<section class="banner_fundo">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-8">
+                    <div class="banner_fundo_text"> 
+                    <!-- COPYRIGHT -->
+                        <p>Programação 1, ISMT&copy; 2017.</p>        
+                        <p>De <a href="#">André Fernandes Nº10059</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                     <!-- OUTRAS INFORMAÇÕES - Botão para abrir Pop-Up Outras Informações -->
+                            <a class="regressar_topo" data-popup_info-open="popup_info-1" id="info_text"><i class="fa fa-info"></i></a>       
+                    </div>          
+                    <div class="col-md-2">
+                    <div class="regressar_topo">
+                        <a href="#home"><i class="fa fa-angle-up"></i></a>
+                    </div>
+                    </div>
+                            <!-- ============================================================
+                                                JQUERY - JANELA info 
+                                                O Código do Pop-Up jQuery, foi inspirado do trabalho CiberKids.   
+                                                Webgrafia: http://inspirationalpixels.com */ 
+                                                ============================================================= -->
+                            <div class="col-md-12 text-center">
+                                <div class="popup_info" data-popup_info="popup_info-1">
+                                        <div class="popup_info-inner">
+                                            <p>Este Website foi realizado no âmbito académico lecionado na unidade curricular de <strong>Programação 1</strong>, da <strong>Licenciatura de Multimédia</strong> no <strong>Instituto Superior Miguel Torga</strong>, que consiste no desenvolvimento de uma <strong>campanha Digital</strong> de promoção de um candidato a <strong>Provedor do Estudante</strong>, da Licenciatura de Multimédia. É um <strong>cargo Fictício</strong> utilizado para efeitos de contextualização do tipo de projeto pretendido. </p>
+                                            <!-- BOTÃO QUE FECHA O POP-UP -->
+                                            <p><a data-popup_info-close="popup_info-1" href="#">Fechar</a></p>
+                                            <a class="popup_info-close" data-popup_info-close="popup_info-1" href="#">x</a>
+                                        </div>
+                                </div>
+                            </div>
+            </div>
+        </div>
+</section>
+    
+<!-- FIM FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script_projecto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
